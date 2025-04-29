@@ -1,38 +1,130 @@
 body {
-  background: #111;
-  color: #fff;
-  font-family: Arial, sans-serif;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #0a1a2a, #16213e);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    overflow: hidden;
+    position: relative;
 }
 
 .login-container {
-  background: #222;
-  padding: 20px 30px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px #000;
-  text-align: center;
+    background: rgba(10, 26, 42, 0.8);
+    padding: 2rem 3rem;
+    border-radius: 15px;
+    border: 3px solid #d4af37;
+    box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+    width: 350px;
+    z-index: 2;
+    backdrop-filter: blur(5px);
 }
 
-input, button {
-  padding: 10px;
-  margin: 10px 0;
-  width: 100%;
-  border: none;
-  border-radius: 5px;
+.logo {
+    text-align: center;
+    margin-bottom: 2rem;
 }
 
-input {
-  background: #333;
-  color: #fff;
+.logo img {
+    height: 100px;
+    filter: drop-shadow(0 0 5px rgba(212, 175, 55, 0.7));
 }
 
-button {
-  background: #00bcd4;
-  color: #000;
-  font-weight: bold;
-  cursor: pointer;
+.logo h1 {
+    font-family: 'Pirata One', cursive;
+    color: #d4af37;
+    font-size: 2.5rem;
+    margin: 10px 0 0;
+    text-shadow: 0 0 8px rgba(212, 175, 55, 0.7);
+}
+
+.input-group {
+    margin-bottom: 1.5rem;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: #a7c7e7;
+    font-size: 0.9rem;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid #d4af37;
+    background: rgba(0, 0, 0, 0.3);
+    color: white;
+    font-size: 1rem;
+    transition: all 0.3s;
+}
+
+.input-group input:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.5);
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.login-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: linear-gradient(to right, #d4af37, #f1c40f);
+    color: #16213e;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 1rem;
+}
+
+.login-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    font-size: 0.9rem;
+}
+
+.links a {
+    color: #a7c7e7;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.links a:hover {
+    color: #d4af37;
+}
+
+.ship-silhouette {
+    position: absolute;
+    bottom: -50px;
+    right: -100px;
+    width: 400px;
+    height: 200px;
+    background-image: url('https://i.imgur.com/JqYeZvn.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.2;
+    z-index: 1;
+}
+
+@media (max-width: 600px) {
+    .login-container {
+        width: 80%;
+        padding: 1.5rem;
+    }
+    
+    .ship-silhouette {
+        display: none;
+    }
 }
