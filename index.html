@@ -1,48 +1,19 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - RPG One Piece</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Pirata+One&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - SHETTERED</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="login-container">
-        <div class="logo">
-            <img src="https://i.imgur.com/XrJjJzP.png" alt="Jolly Roger">
-            <h1>ONE PIECE SHETTERED CROWN</h1>
-        </div>
-        
-        <form class="login-form">
-            <div class="input-group">
-                <label for="username">Nome </label>
-                <input type="text" id="username" placeholder="Ex: Monkey D. Luffy" required>
-            </div>
-            
-            <div class="input-group">
-                <label for="password">Senha do Tesouro</label>
-                <input type="password" id="password" placeholder="••••••••" required>
-            </div>
-            
-            <button type="submit" class="login-btn">Embarcar!</button>
-            
-            <div class="links">
-                <a href="#">Esqueci minha senha</a>
-                <a href="#">Criar nova tripulação</a>
-            </div>
-        </form>
-    </div>
-    
-    <div class="ship-silhouette"></div>
-    
-    <script>
-        document.querySelector('.login-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const username = document.getElementById('username').value;
-            alert(Bem-vindo a bordo, ${username}! Preparando para zarpar...);
-            // Aqui você pode adicionar redirecionamento para o jogo
-        });
-    </script>
+  <div class="login-container">
+    <h2>Login</h2>
+    <form>
+      <input type="text" placeholder="Usuário" required><br>
+      <input type="password" placeholder="Senha" required><br>
+      <button type="submit">Entrar</button>
+    </form>
+  </div>
 </body>
 </html>
